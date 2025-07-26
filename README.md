@@ -1,86 +1,159 @@
-# 🛍️ Superstore Sales Analysis Using Power BI and SQL
+# 📊 Superstore Sales Analysis Project
 
-### 👨‍💻 Created by: Jagan Dattu Dudam  
-### 📅 Date: July 26, 2025  
-
+A comprehensive end-to-end data analysis project using **Power BI**, **SQL**, **Python**, and **Excel** on a fictional Superstore dataset. This project provides key business insights on **sales performance**, **customer behavior**, **regional trends**, and **profitability**.
 
 ---
 
-## 📌 Problem Statement
+## 📁 Project Structure
 
-The goal of this project is to analyze the sales data of a fictional superstore and extract valuable insights to support business decisions. Key challenges include cleaning and transforming raw datasets, performing exploratory data analysis (EDA), and delivering intuitive, interactive visualizations.
-
----
-
-## ✅ My Approach
-
-This project was independently built as part of my data analytics portfolio. Here's how I tackled it:
-
-- 🔹 **Python** was used to clean and transform the Excel-based sales dataset.
-- 🔹 Data was converted into CSV and loaded into a **SQL database**.
-- 🔹 **SQL queries** were written to extract patterns, trends, and key metrics.
-- 🔹 A polished **Power BI dashboard** was developed to display results across 3 key areas:
-  - Sales Performance
-  - Customer Analysis
-  - Product Profitability
+Superstore-Sales-Analysis-Using-Power-BI-and-SQL/
+├── LICENSE # License information (MIT)
+├── README.md # Project overview and setup guide
+├── Superstore Sales Insights.pbix # Power BI dashboard
+├── superstore_final_dataset.csv # Final cleaned dataset
+├── superstore_sales_cleaned.csv # Intermediate cleaned dataset
+├── SuperstoreSalesAnalysis_JupyterNotebook.ipynb # Python notebook for cleaning & EDA
+├── Superstore_sales_analysis_SQL_Insights.sql # SQL queries for analysis
+└── SuperstoreData_cleaned_dump_Dataset.sql # SQL dump to create and populate DB
 
 ---
 
-## 📊 Power BI Dashboard Features
+## 🚀 Tools & Technologies Used
 
-The final dashboard includes:
-
-- 📅 Slicers by Year and Region (2012–2015, USCA, LATAM, Europe, Asia Pacific, Africa)
-- 📦 KPIs: Sales, Quantity, Avg. Delivery Days, Return Orders
-- 📍 Map visualization of sales by country
-- 🍰 Pie charts and bar charts to analyze:
-  - Sales by Segment & Market
-  - Top 10 Customers
-  - Top 6 Profit Products
-  - Top 6 Loss Products
-
-✔️ Includes a **custom blue background** for a modern, professional aesthetic.
+| Tool           | Purpose                          |
+|----------------|----------------------------------|
+| **Power BI**   | Interactive dashboards & visuals |
+| **SQL**        | Data querying & exploration      |
+| **Python**     | Data cleaning & exploratory analysis |
+| **Excel**      | Initial data storage and inspection |
 
 ---
 
-## 🧰 Tools & Technologies Used
+## 📦 Dataset Overview
 
-| Tool | Purpose |
-|------|---------|
-| **Python** | Data cleaning and transformation |
-| **SQL** | Data querying and insight generation |
-| **Power BI** | Data visualization and dashboarding |
-| **Excel/CSV** | Source and cleaned datasets |
+The dataset includes sales transactions with the following columns:
 
----
-
-## 📁 Repository Structure
-
-| File | Description |
-|------|-------------|
-| `Superstore_Sales_Analysis_Jagan.pbix` | Final interactive Power BI report |
-| `SuperstoreData_cleaned_dump_Dataset.sql` | SQL file with transformed data |
-| `superstore_sales_cleaned.csv` | Cleaned dataset for analysis |
-| `README.md` | This project documentation |
+- **Order ID, Order Date, Ship Date**
+- **Customer ID, Segment, Region, State, City**
+- **Product Name, Category, Sub-Category**
+- **Sales, Quantity, Discount, Profit, Shipping Mode**
 
 ---
 
-## 💡 What I Learned
+## 📌 Objectives
 
-- How to clean and structure messy sales data using Python and SQL  
-- Writing performant SQL queries to extract relevant business insights  
-- Designing dashboards in Power BI that clearly communicate trends  
-- Using slicers and charts to make dashboards interactive and user-friendly  
-
----
-
-## 🤝 Contribution
-
-Feel free to fork this repo, use the dashboard design, or reuse the queries for your own datasets. Feedback and suggestions are welcome!
+- Analyze **sales trends** over time
+- Compare **regional and state-wise performance**
+- Study **product category** and **sub-category profitability**
+- Segment customers based on **sales behavior**
+- Explore **shipping mode preferences**
 
 ---
 
+## 🛠 Setup Instructions
 
----
+### ⚙️ SQL Setup
 
-**📌 Note:** This project was completed independently by Jagan Dattu Dudam as part of interview preparation and data analysis practice.
+**Requirements:**
+
+- MySQL / PostgreSQL / SQL Server
+- SQL client (e.g., MySQL Workbench, pgAdmin, SSMS)
+
+**Steps:**
+
+1. Import database dump:
+   ```sql
+   SOURCE path/to/SuperstoreData_cleaned_dump_Dataset.sql;
+
+-- Run queries from
+Superstore_sales_analysis_SQL_Insights.sql
+
+## Python (Jupyter Notebook)
+Requirements:
+
+Python 3.6+
+
+Jupyter Notebook
+
+Libraries: pandas, numpy, matplotlib, seaborn
+# Install required packages
+pip install pandas numpy matplotlib seaborn notebook
+
+# Launch notebook
+jupyter notebook
+Open the notebook: SuperstoreSalesAnalysis_JupyterNotebook.ipynb
+Run all cells to clean, analyze, and visualize the data.
+
+📈 Power BI Dashboard
+Requirements:
+
+## Power BI Desktop installed
+
+Usage:
+
+Open the file: Superstore Sales Insights.pbix
+
+Explore interactive charts
+
+To update data: Go to Home → Refresh
+
+## 📊 Excel Files
+superstore_sales_cleaned.csv: Contains cleaned, pre-processed data.
+
+superstore_final_dataset.csv: Final dataset used for analysis and dashboards.
+
+Can be opened using MS Excel, Google Sheets, or LibreOffice.
+
+## 🔍 Key Insights
+✅ Sales Trends
+
+Month-wise & year-wise sales growth
+
+Peak seasons & months
+
+✅ Region & State Performance
+
+Top-performing and underperforming states
+
+Regional comparison of revenue and profit
+
+✅ Product Category Analysis
+
+Most profitable categories & sub-categories
+
+Loss-making items
+
+✅ Customer Segmentation
+
+Sales volume by customer segment
+
+High-value customers
+
+✅ Shipping Mode Analysis
+
+Preferred shipping types
+
+Profitability by shipping mode
+
+## 🤝 Contributing
+Contributions are welcome!
+To contribute:
+
+Fork the repository
+
+Create a new branch
+
+Make your changes
+
+Create a pull request
+
+## 📄 License
+This project is licensed under the MIT License.
+See the LICENSE file for more details.
+
+<img width="1535" height="994" alt="Screenshot 2025-07-26 123109" src="https://github.com/user-attachments/assets/2e27846a-fec5-4c38-b7b3-11378f66617b" />
+
+<img width="1508" height="953" alt="Screenshot 2025-07-26 123100" src="https://github.com/user-attachments/assets/c49edf88-7457-44f2-806c-b55ae2b0e827" />
+<img width="1506" height="1089" alt="Screenshot 2025-07-26 123052" src="https://github.com/user-attachments/assets/9251cbe3-bc82-4390-b9a0-174a98e7be12" />
+
+
